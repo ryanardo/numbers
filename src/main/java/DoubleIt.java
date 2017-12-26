@@ -7,7 +7,8 @@ public class DoubleIt {
         System.out.println("Give me a number, and I will double it for you!");
         try{
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-            Integer yourNumber = bufferedReader.readLine();
+            String stringNumber = bufferedReader.readLine();
+            Integer yourNumber = Integer.parseInt(stringNumber);
             Integer yourDoubleNumber = yourNumber * 2;
 
             System.out.println("I doubled your number fo you: " + yourDoubleNumber);
